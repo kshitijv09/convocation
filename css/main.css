@@ -386,7 +386,7 @@ input.input100 {
   
   background: url('../images/convo.jpg');
   background-size: contain;
-  background-position: center;
+  /*background-position: center;*/
   background-repeat: no-repeat;
 }
 
@@ -529,7 +529,14 @@ input.input100 {
 .hov-bg0:hover {background-color: #fff;}
 
 /*---------------------------------------------*/
-
+.director{
+ 
+  background: rgb(0,0,0,0.2);
+  margin-top: 200px;
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+}
 
 
 
