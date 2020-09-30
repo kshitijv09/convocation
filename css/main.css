@@ -537,6 +537,11 @@ input.input100 {
   color: #fff;
   flex-wrap: wrap;
 }
+@media only screen and (min-width: 140px){
+  .director{
+    margin-top: 300px !important;
+  }
+}
 
 
 
