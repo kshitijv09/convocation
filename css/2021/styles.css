@@ -1,0 +1,249 @@
+body {
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 200vh;
+
+  text-align: center;
+}
+
+.div1 {
+  background-color: #1a2f60;
+  height: 25vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.div1 p {
+  color: white;
+  font-family: "Squada One", cursive;
+  font-size: 12vw;
+  margin: 0;
+}
+.div2 {
+  position: relative;
+}
+.div2 {
+  opacity: 0.5;
+}
+.div2 {
+  background-color: white;
+  height: 75vh;
+  background-image: url("../../images/2021/convocation_img.png");
+  background-size: 145vh;
+  background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+
+  display: flex;
+  flex-direction: column;
+}
+.container3 {
+  width: 100vw;
+  position: absolute;
+  top: 45vh;
+}
+.date {
+  font-size: 11vh;
+  font-family: "Cabin", sans-serif;
+  color: #243a6d;
+  font-weight: 800;
+  width: 100%;
+  margin-bottom: 1vh;
+}
+
+.timer {
+  width: 100%;
+  justify-content: center;
+
+  display: flex;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  background: rgba(22, 53, 119, 0.8);
+  width: 14.5vh;
+  height: 14.5vh;
+  justify-content: center;
+  text-align: center;
+  border-radius: 5vh;
+  margin: 5px;
+}
+.box .constant {
+  margin: 0;
+  font-size: 2vh;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+}
+.box h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 7vh;
+  margin: 0;
+  color: white;
+  line-height: 7.2vh;
+}
+.guestsection {
+  height: 100vh;
+  background-color: #1a2f60;
+}
+.guestheading {
+  height: 35vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.guestheading p {
+  color: white;
+  font-family: "Squada One", cursive;
+  font-size: 12vw;
+  margin: 0;
+}
+
+.guestdetails {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  width: 50vw;
+  margin: 0;
+}
+.guestpic {
+  width: 40vw;
+  margin: 0;
+}
+.innercontainer {
+  display: flex;
+  justify-content: center;
+}
+.guestinfo {
+  padding-top: 4vh;
+  display: inline;
+  width: 60vw;
+  text-align: left;
+}
+.guestinfo li {
+  font-size: 1.5vw;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.guestinfo h1 {
+  font-size: 3vw;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+@media screen and (max-width: 800px) {
+  .guestheading {
+    height: 30vh;
+  }
+  .guestheading p {
+    font-family: "Squada One", cursive;
+    font-size: 15vw;
+    margin: 0;
+  }
+  .innercontainer {
+    flex-direction: column;
+  }
+  .guestdetails {
+    height: 70vh;
+    flex-direction: row;
+  }
+  .guestinfo {
+    text-align: center;
+    width: 100vw;
+    padding: 0;
+  }
+  .guestinfo h1 {
+    font-size: 5vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 3vw;
+  }
+  .guestinfo ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .guestinfo li {
+    font-size: 2.5vh;
+    line-height: 3.18vh;
+    color: blanchedalmond;
+  }
+  .guestpic {
+    width: 100vw;
+  }
+  img {
+    max-width: 380px;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 600px) {
+  .guestinfo li {
+    letter-spacing: 0.15vw;
+    font-weight: bold;
+    font-size: 2.65vw;
+    line-height: 3.18vh;
+    color: blanchedalmond;
+  }
+  .guestinfo {
+    text-align: center;
+    width: 100vw;
+    padding: 0;
+  }
+  .guestinfo h1 {
+    font-size: 4.5vw;
+  }
+  span::before {
+    content: "\a";
+    white-space: pre;
+  }
+  .div1 p {
+    font-family: serif;
+    font-weight: bold;
+    font-size: 10vw;
+  }
+
+  .div2 {
+    background-size: 90vh;
+  }
+  .date {
+    font-size: 11vw;
+
+    margin-bottom: 1vh;
+  }
+  .container3 {
+    top: 30vh;
+  }
+  .box {
+    width: 20vw;
+    height: 20vw;
+    justify-content: center;
+    text-align: center;
+    border-radius: 7vw;
+    margin: 1vw;
+  }
+  
+  .box .constant {
+    margin: 0;
+    font-size: 3vw;
+    color: blanchedalmond;
+    font-family: "Open Sans";
+    letter-spacing: 0.2vw;
+  }
+  .box h1 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 10vw;
+    margin: 0;
+    color: white;
+    line-height: 9vw;
+  }
+  
+}
