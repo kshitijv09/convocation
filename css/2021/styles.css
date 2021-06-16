@@ -54,6 +54,9 @@ body {
   margin-bottom: 1vh;
   letter-spacing: 2px;
 }
+.timer-row {
+  display: flex;
+}
 .timer {
   width: 100%;
   justify-content: center;
@@ -189,6 +192,11 @@ img {
   img {
     max-width: 380px;
     width: 100vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container3 {
+    top: 35vh;
   }
 }
 @media screen and (max-width: 600px) {
