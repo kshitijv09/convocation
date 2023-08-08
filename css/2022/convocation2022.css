@@ -15,58 +15,39 @@ body {
   padding: 20px 0;
   text-align: center;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
-  /* border: yellow solid 3px; */
 }
-
 .div1 p {
   color: white;
   font-family: "Squada One", cursive;
   font-size: 8vw;
-  margin: 5px;
+  margin: 0;
   height: 100%;
-  padding-top: 10vw;
-  /* border: red solid 3px; */
 }
 .div2 {
-  position:sticky;
+  position: relative;
 }
-
 .div2 {
-  /* border: green solid 4px; */
+  opacity: 0.5;
+}
+.div2 {
   background-color: white;
   height: 100vh;
-  /*  background-image: url("../../images/2021/convocation_img.png"); */
+  background-image: url("../../images/2021/convocation_img.png");
   background-size: 150vh;
-  background-repeat: no-repeat;
+ background-repeat: no-repeat;
   background-position-x: center;
   background-position-y: bottom;
   display: flex;
-  flex-direction: row;
-}
-.text-section {
-  width: 50%;
-  height: 100%;
-  text-align: center;
-  /*  border: brown solid 3px; */
-  background-color: #d8dfcb;
-  display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-.img-section {
-  width: 50%;
-}
-.img-section img {
-  width: 100%;
-  height: 100%;
 }
 .container3 {
-  width: 100%;
+  width: 100vw;
+  position: absolute;
+  top: 45vh;
 }
 .date {
-  font-size: 10vh;
-  font-family: "Ubuntu", sans-serif;
+  font-size: 11vh;
+  font-family: 'Ubuntu', sans-serif;
   color: #243a6d;
   font-weight: 800;
   width: 100%;
@@ -135,39 +116,16 @@ body {
 }
 
 img {
-  width: 50vw;
+  width: 25vw;
   margin: 0;
 }
-
-/* Define the initial state */
-.animated-element {
-  opacity: 0;
-  transition: opacity 1s ease-in-out;
-}
-
-/* Define the animation */
-.animated-element.animate {
-  opacity: 1;
-}
-
 .guestpic {
   width: 40vw;
   margin: 0;
-  border-radius: 60%;
-}  
-
-.guestpic img {
-  width: 65%;
-  
 }
-.clip-circle {
-    clip-path: circle(150px at center);
-}
-
-.innercontainer { /*guest pic+text*/
+.innercontainer {
   display: flex;
   justify-content: center;
-  /* border: red solid 3px; */
 }
 .guestinfo {
   padding-top: 4vh;
@@ -180,7 +138,7 @@ img {
   color: white;
   font-family: "Montserrat", sans-serif;
 }
-.guest_text--container {
+.guest_text--container{
   display: none;
   font-family: "Montserrat", sans-serif;
 }
@@ -192,29 +150,7 @@ img {
   letter-spacing: 2px;
 }
 
-@media screen and (max-width: 820px) {
-  .text-section {
-    width: 100%;
-    background-image: url("../../images/2023/bkg-2.jpg");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position-x: center;
-    background-position-y: bottom;
-  }
-
-  .div1 p {
-    padding-top: 0;
-  }
-
-  .date {
-    color: white;
-    font-weight: 900;
-  }
-  .img-section {
-    width: 0%;
-    display: none;
-  }
-
+@media screen and (max-width: 800px) {
   .guestheading {
     height: 30vh;
   }
@@ -237,9 +173,9 @@ img {
   }
   .guestinfo h1 {
     font-size: 5vw;
+    margin-bottom: 0;
     padding-bottom: 0;
-    /*  line-height: 3vw; */
-    line-height: 1;
+    line-height: 3vw;
   }
   .guestinfo ul {
     list-style-type: none;
@@ -264,24 +200,20 @@ img {
   }
 }
 @media screen and (max-width: 600px) {
-  .container {
-    height: auto;
-  }
+ .container{
+   height: auto;
+ }
   .div1 p {
     font-size: 3.5rem;
   }
   .div2 {
-    display: flex;
-    flex-direction: column;
     background-color: white;
     height: 75vh;
+    background-image: url("images/convocation_img.png");
+    background-size: 100vh;
   }
-
-  .text-section {
-    width: 100%;
-  }
-  .img-section {
-    width: 100%;
+  .container3 {
+    top: 40vh;
   }
   .date {
     font-size: 5vh;
@@ -294,7 +226,7 @@ img {
   }
   .guestheading {
     height: auto;
-    margin: 20px 0;
+    margin:20px 0;
   }
 
   .guestheading p {
@@ -316,7 +248,7 @@ img {
     overflow: hidden;
   }
   .guestinfo {
-    padding-top: 0;
+    padding-top:0;
     width: 100%;
   }
   .guestinfo ul {
@@ -324,21 +256,21 @@ img {
     text-align: justify;
     display: none;
   }
-  .guest_text--container {
+  .guest_text--container{
     display: inherit;
     padding: 0 30px;
     text-align: justify;
     margin: 30px 0;
   }
-  .guest_text {
-    font-size: 0.85rem;
+  .guest_text{
+    font-size:0.85rem;
     font-weight: 600;
     opacity: 0.9;
     color: white;
     line-height: 1.5;
   }
   .guestinfo li {
-    font-size: 0.85rem;
+    font-size:0.85rem;
     font-weight: 600;
     opacity: 0.9;
     color: white;
