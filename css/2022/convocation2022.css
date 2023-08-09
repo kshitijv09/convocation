@@ -1,0 +1,283 @@
+body {
+  overflow-x: hidden;
+  position: relative;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 190vh;
+  text-align: center;
+}
+
+.div1 {
+  background-color: #1a2f60;
+  height: auto;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.5);
+}
+.div1 p {
+  color: white;
+  font-family: "Squada One", cursive;
+  font-size: 8vw;
+  margin: 0;
+  height: 100%;
+}
+.div2 {
+  position: relative;
+}
+.div2 {
+  opacity: 0.5;
+}
+.div2 {
+  background-color: white;
+  height: 100vh;
+  background-image: url("../../images/2021/convocation_img.png");
+  background-size: 150vh;
+ background-repeat: no-repeat;
+  background-position-x: center;
+  background-position-y: bottom;
+  display: flex;
+  flex-direction: column;
+}
+.container3 {
+  width: 100vw;
+  position: absolute;
+  top: 45vh;
+}
+.date {
+  font-size: 11vh;
+  font-family: 'Ubuntu', sans-serif;
+  color: #243a6d;
+  font-weight: 800;
+  width: 100%;
+  margin-bottom: 1vh;
+  letter-spacing: 2px;
+}
+.timer-row {
+  display: flex;
+}
+.timer {
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
+.box {
+  display: flex;
+  flex-direction: column;
+  background: rgba(22, 53, 119, 0.8);
+  width: 14.5vh;
+  height: 14.5vh;
+  justify-content: center;
+  text-align: center;
+  border-radius: 6px;
+  margin: 25px;
+}
+.box .constant {
+  margin: 0;
+  font-size: 2vh;
+  color: whitesmoke;
+  font-family: "Montserrat", sans-serif;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+}
+.box h1 {
+  font-family: "Open Sans", sans-serif;
+  font-size: 7vh;
+  margin: 0;
+  color: white;
+  line-height: 7.2vh;
+}
+.guestsection {
+  height: 90vh;
+  background-color: #1a2f60;
+}
+.guestheading {
+  height: 25vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.guestheading p {
+  color: white;
+  font-family: "Squada One", cursive;
+  font-size: 8vw;
+  margin: 0;
+}
+
+.guestdetails {
+  height: 65vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+img {
+  width: 25vw;
+  margin: 0;
+}
+.guestpic {
+  width: 40vw;
+  margin: 0;
+}
+.innercontainer {
+  display: flex;
+  justify-content: center;
+}
+.guestinfo {
+  padding-top: 4vh;
+  display: inline;
+  width: 60vw;
+  text-align: left;
+}
+.guestinfo li {
+  font-size: 1.5vw;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.guest_text--container{
+  display: none;
+  font-family: "Montserrat", sans-serif;
+}
+.guestinfo h1 {
+  font-size: 2.4vw;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+@media screen and (max-width: 800px) {
+  .guestheading {
+    height: 30vh;
+  }
+  .guestheading p {
+    font-family: "Squada One", cursive;
+    font-size: 15vw;
+    margin: 0;
+  }
+  .innercontainer {
+    flex-direction: column;
+  }
+  .guestdetails {
+    height: 70vh;
+    flex-direction: row;
+  }
+  .guestinfo {
+    text-align: center;
+    width: 100vw;
+    padding: 0;
+  }
+  .guestinfo h1 {
+    font-size: 5vw;
+    margin-bottom: 0;
+    padding-bottom: 0;
+    line-height: 3vw;
+  }
+  .guestinfo ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  .guestinfo li {
+    font-size: 2.5vh;
+    line-height: 3.18vh;
+    color: blanchedalmond;
+  }
+  .guestpic {
+    width: 100vw;
+  }
+  img {
+    max-width: 380px;
+    width: 100vw;
+  }
+}
+@media screen and (max-width: 991px) {
+  .container3 {
+    top: 35vh;
+  }
+}
+@media screen and (max-width: 600px) {
+ .container{
+   height: auto;
+ }
+  .div1 p {
+    font-size: 3.5rem;
+  }
+  .div2 {
+    background-color: white;
+    height: 75vh;
+    background-image: url("images/convocation_img.png");
+    background-size: 100vh;
+  }
+  .container3 {
+    top: 40vh;
+  }
+  .date {
+    font-size: 5vh;
+    margin-top: -40px;
+    letter-spacing: 0px;
+  }
+  .guestsection {
+    height: auto;
+    padding-bottom: 20px;
+  }
+  .guestheading {
+    height: auto;
+    margin:20px 0;
+  }
+
+  .guestheading p {
+    font-size: 4.2rem;
+    margin: 40px 5px 20px 5px;
+  }
+
+  .guestdetails {
+    height: auto;
+    flex-direction: row;
+  }
+  img {
+    width: 350px;
+    margin: 0;
+  }
+  .guestpic {
+    width: 100%;
+    margin: 0 0 20px 0;
+    overflow: hidden;
+  }
+  .guestinfo {
+    padding-top:0;
+    width: 100%;
+  }
+  .guestinfo ul {
+    padding: 0 40px;
+    text-align: justify;
+    display: none;
+  }
+  .guest_text--container{
+    display: inherit;
+    padding: 0 30px;
+    text-align: justify;
+    margin: 30px 0;
+  }
+  .guest_text{
+    font-size:0.85rem;
+    font-weight: 600;
+    opacity: 0.9;
+    color: white;
+    line-height: 1.5;
+  }
+  .guestinfo li {
+    font-size:0.85rem;
+    font-weight: 600;
+    opacity: 0.9;
+    color: white;
+    line-height: 1.5;
+  }
+  .guestinfo h1 {
+    font-size: 1.2rem;
+    line-height: 1.5;
+  }
+}
